@@ -16,3 +16,22 @@ function animate() {
 }
 
 animate();
+
+window.addEventListener("keydown", (e) => {
+  console.log(e);
+
+  switch (e.key) {
+    // jump
+    case "w":
+      if (player.velocity.y === 0) player.velocity.y = -20;
+      break;
+    // move to the left
+    case "a":
+      console.log("pressed a");
+      break;
+    // move to the right
+    case "d":
+      console.log("pressed d");
+      break;
+  }
+});
