@@ -31,9 +31,9 @@ function animate() {
 
   backgroundLevel1.draw();
 
-  player.velocity.x = 0;
-  if (keys.d.pressed) player.velocity.x = 5;
-  else if (keys.a.pressed) player.velocity.x = -5;
+  player.character.velocity.x = 0;
+  if (keys.d.pressed) player.character.velocity.x = 5;
+  else if (keys.a.pressed) player.character.velocity.x = -5;
 
   player.draw();
   player.update();

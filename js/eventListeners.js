@@ -2,7 +2,7 @@ window.addEventListener("keydown", (e) => {
   switch (e.key) {
     // jump
     case "w":
-      if (player.velocity.y === 0) player.velocity.y = -20;
+      if (player.character.velocity.y === 0) player.character.velocity.y = -20;
       break;
     // move to the left
     case "a":
